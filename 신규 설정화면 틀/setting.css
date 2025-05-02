@@ -48,7 +48,7 @@ body {
     height: 154px;
     display: flex;
     flex-direction: row;
-    background-color: #ffffff; /* 배경은 테스트용 회색 */
+    background-color: #ffffff;
 }
   
   /* 내부 박스 공통 스타일 */
@@ -66,7 +66,7 @@ body {
 .user-image-box {
     width: 70px;
     height: 70px;
-    background-color: #444; /* 테스트용 색상, 원하는 걸로 바꿔도 됨 */
+    background-color: #444; 
 }
   
   /* box-1 오른쪽 정렬 + 중앙 수직 정렬 */
@@ -226,7 +226,7 @@ body {
     flex-direction: column;
     gap: 8px;
     padding: 10px;
-    background-color: #ffffff; /* 연한 배경 (테스트용) */
+    background-color: #ffffff;
   }
   
 
