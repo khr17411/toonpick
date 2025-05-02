@@ -142,7 +142,7 @@ body {
 
   /* 민트색 가로 라인 */
 .mint-line {
-    width: 90%;               /* 90 - 10 = 80% */
+    width: 90%;
     height: 2px;              /* 선 두께 */
     background-color: #50E5A0;
     margin: 0px auto;        /* 위아래 여백 + 가운데 정렬 */
