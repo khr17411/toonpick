@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+  }
+  @media (max-width: 480px) {
+    .user-section, .setting-section, .etc-section {
+      padding: 8px;
+    }
+  }
+
+      /* 헤더 스타일 */
+.app-header {
+    position: relative;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+    background-color: #50E5A0;
+}
+  
+  /* 뒤로가기 버튼 */
+.back-button {
+    position: absolute;
+    left: 16px;
+    font-size: 24px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+  
+  /* 중앙 제목 */
+.header-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+  /* 민트색 가로 라인 */
+  .mint-line {
+    width: 90%;  
+    height: 2px;
+    background-color: #50E5A0;
+    margin: 0px auto;
+    border-radius: 1px;
+}
+
+/* 알림 상세 헤더 */
+.alarm-detail-header {
+    height: 100px;
+    padding: 0 35px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  
+  /* 왼쪽 원형 아이콘 */
+  .alarm-detail-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #ccc;
+    flex-shrink: 0;
+  }
+  
+  /* 오른쪽 텍스트 묶음 */
+  .alarm-detail-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* 보낸 사람 */
+  .sender-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  /* 날짜 */
+  .send-date {
+    font-size: 12px;
+    color: #777;
+    margin-top: 4px;
+  }
+  
+  /* 알림 제목 영역 */
+.alarm-title-section {
+    width: 100%;
+    padding: 20px 40px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000;
+    line-height: 1.4;
+    word-break: break-word; /* 긴 단어 줄바꿈 */
+  }
+  
+  /* 알림 문구 영역 */
+.alarm-suggestion-text {
+    width: 100%;
+    padding: 0 45px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    word-break: keep-all; /* 단어 단위로 줄바꿈 */
+    margin-bottom: 10px;
+  }
+  
+.recommend-button-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  /* 추천된 웹툰 버튼 */
+  .recommend-button {
+    width: 80%;
+    height: 90px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+  }
+  
