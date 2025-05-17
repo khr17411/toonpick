@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+}
+
+.chat-header {
+  background-color: #00c97b;
+  color: white;
+  padding: 14px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.chat-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 120px);
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chat-message {
+  max-width: 70%;
+  padding: 10px 14px;
+  border-radius: 16px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.chat-message.assistant {
+  background-color: #f0f0f0;
+  color: #000;
+  align-self: flex-start;
+  border-radius: 18px 18px 18px 4px;
+}
+
+.chat-message.user {
+  background-color: gray;
+  color: #fff;
+  align-self: flex-end;
+  border-radius: 18px 18px 4px 18px;
+}
+
+.chat-input-area {
+  display: flex;
+  margin-top: 12px;
+}
+
+#chat-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  font-size: 14px;
+}
+
+#chat-send {
+  padding: 10px 16px;
+  background-color: gray;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+.chat-message img {
+  display: block;
+  margin: 0 auto 8px;
+}
+
+/* 추천 질문 버튼 */
+.suggestions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+
+.suggestion-btn {
+  padding: 8px 12px;
+  border-radius: 16px;
+  background: #e0f7ec;
+  color: #00a172;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 1px solid #222;
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    width: 100%;
+    border-top: 1px solid #ddd;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    background: none;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .nav-link i {
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+  
+  .nav-link.active {
+    color: #00ff88;
+  }
+  
+  .nav-link:hover {
+    color: #00cc66;
+    transform: scale(1.05);
+  }
+  
+  .bottom-nav button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bottom-nav button.active {
+    color: #00ff88;
+  }
+  
+  .bottom-nav button i {
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
