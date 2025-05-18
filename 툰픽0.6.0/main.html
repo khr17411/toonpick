@@ -1,0 +1,150 @@
+<!-- main.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToonPick</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-top">
+      <h1>ToonPick</h1>
+    </div>
+  </header>
+<button id="my-button" style="display:none;"></button>
+
+  <main class="main-content">
+    <nav class="nav-menu">
+      <ul>
+        <li class="active"><a href="main.html">추천</a></li>
+        <li><a href="main.html">요일</a></li>
+        <li><a href="main.html">장르</a></li>
+      </ul>
+    </nav>
+    
+    <nav id="ai-subtitle" class="nav-menu">
+      <button class="ai-button">💬 툰픽 AI에게 웹툰을 추천받으세요!</button>
+    </nav>
+
+    <section class="popular-section">
+      <h2>실시간 인기 TOP 10!</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/나혼자만 레벨업.jpg" alt="인기 웹툰 1"></div>
+          <div class="swiper-slide"><img src="images/화산귀환.jpg" alt="인기 웹툰 2"></div>
+          <div class="swiper-slide"><img src="images/별이삼샵.jpg" alt="인기 웹툰 3"></div>
+          <div class="swiper-slide"><img src="images/무한의 마법사.jpg" alt="인기 웹툰 4"></div>
+          <div class="swiper-slide"><img src="images/외모지상주의.jpg" alt="인기 웹툰 5"></div>
+          <div class="swiper-slide"><img src="images/신과함께.jpg" alt="인기 웹툰 6"></div>
+          <div class="swiper-slide"><img src="images/낢이 사는 이야기.jpg" alt="인기 웹툰 7"></div>
+          <div class="swiper-slide"><img src="images/윈드 브레이커.jpg" alt="인기 웹툰 8"></div>
+          <div class="swiper-slide"><img src="images/중증외상센터.jpg" alt="인기 웹툰 9"></div>
+          <div class="swiper-slide"><img src="images/스위트홈.jpg" alt="인기 웹툰 10"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <button class="recommend-button">판타지 웹툰 추천해줘! 💬</button>
+    </section>
+
+    <section class="new-section">
+      <div class="section-header"><h2>신작 추천</h2></div>
+      <div id="webtoon-list" class="new-list"></div>
+    </section>
+
+    <div id="weekday-filters" class="filter-wrap">
+      <button class="day-btn" data-day="MONDAY">월요일</button>
+      <button class="day-btn" data-day="TUESDAY">화요일</button>
+      <button class="day-btn" data-day="WEDNESDAY">수요일</button>
+      <button class="day-btn" data-day="THURSDAY">목요일</button>
+      <button class="day-btn" data-day="FRIDAY">금요일</button>
+      <button class="day-btn" data-day="SATURDAY">토요일</button>
+      <button class="day-btn" data-day="SUNDAY">일요일</button>
+    </div>
+
+    <section id="weekday-section" class="new-section hidden">
+      <div class="section-header"><h2 id="weekday-title">요일별 웹툰</h2></div>
+      <div id="weekday-webtoon-list" class="new-list"></div>
+    </section>
+
+    <div id="genre-filters" class="filter-wrap"></div>
+
+    <section id="genre-section" class="new-section hidden">
+      <div class="section-header"><h2 id="genre-title">장르별 웹툰</h2></div>
+      <div id="genre-webtoon-list" class="new-list"></div>
+    </section>
+  </main>
+  <!-- ▶ 웹툰 미리보기 모달 -->
+  <div id="preview-modal" class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button id="preview-close">&times;</button>
+      <img id="preview-img" src="" alt="미리보기">
+      <h3 id="preview-title"></h3>
+      <p id="preview-desc">줄거리를 불러오는 중…</p>
+      <a id="preview-link" href="#" target="_blank">웹툰 바로가기</a>
+    </div>
+  </div>
+  <div id="chat-modal" class="modal hidden">
+    <div class="modal-overlay"></div>
+    <div class="modal-content chat-content">
+      <button id="chat-close" class="close-btn">&times;</button>
+      <div id="chat-messages" class="chat-messages"></div>
+      <div class="chat-input-area">
+        <input type="text" id="chat-input" placeholder="메시지를 입력하세요…" />
+        <button id="chat-send">전송</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+  <!-- MY 페이지 및 설정 -->
+  <div id="mypage-container" class="mypage hidden">
+    <div class="mypage-header">
+      <h2 id="user-greeting">
+        <span class="user-name" id="nickname-display-greeting"></span>
+        <span class="hello-text">님 안녕하세요!</span>
+      </h2>
+      <div class="mypage-buttons">
+        <button id="setting-button">설정</button>
+        <button id="logout-button">로그아웃</button>
+      </div>
+    </div>
+
+    <div id="setting-container" class="setting hidden">
+      <div class="setting-header">
+        <button id="setting-back-button" class="back-button">←</button>
+        <h2>설정</h2>
+      </div>
+      <div class="setting-body">
+        <label>닉네임: <span id="nickname-display-setting"></span></label>
+        <button id="change-nickname-button">변경</button>
+      </div>
+    </div>
+
+    <div class="mypage-tabs">
+      <button id="favorites-tab" class="active">즐겨찾기</button>
+      <button id="recent-tab">최근 본 웹툰</button>
+    </div>
+    <div id="favorites-list" class="mypage-list"></div>
+    <div id="recent-list" class="mypage-list hidden"></div>
+  </div>
+
+  <div id="logout-modal" class="modal hidden">
+    <div class="modal-content">
+      <p>로그아웃 하시겠습니까?</p>
+      <button id="confirm-logout">확인</button>
+      <button id="cancel-logout">취소</button>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+  
+</body>
+</html>

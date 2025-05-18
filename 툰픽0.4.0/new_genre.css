@@ -1,0 +1,376 @@
+/* 기본 설정 */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #000;
+  color: white;
+}
+
+/* 헤더 */
+header {
+  background-color: #00cc66;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.header {
+  padding: 12px 16px 8px 16px;
+  background-color: #1e1e1e;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-box input {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  background-color: #333;
+  color: white;
+  outline: none;
+}
+
+/* nav-tabs */
+.nav-tabs {
+    display: flex;
+    background-color: #111;
+    border-bottom: 1px solid #222;
+  }
+
+  .tab-link {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    background: none;
+    color: #aaa;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  .tab-link:hover {
+    color: #00ff88;
+    background-color: #1a1a1a;
+  }
+  
+  .tab-link.active {
+    color: #00cc66;
+    border-bottom: 2px solid #00cc66;
+  }
+  
+  
+  .nav-tabs button {
+    flex: 1;
+    padding: 15px;
+    background: none;
+    border: none;
+    color: #aaa;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .nav-tabs button.active {
+    color: #00cc66;
+    border-bottom: 2px solid #00cc66;
+  }
+
+  body {
+    background: #121212;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    padding-bottom: 80px; /* 하단 네비게이션 높이 고려 */
+  }
+  
+  .genre-filter {
+    display: flex;
+    gap: 25px;
+    padding: 10px;
+    overflow-x: auto;
+  }
+  
+  .genre-btn {
+    background: #1f1f1f;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    color: white;
+    display: inline-block; /* block이나 flex도 가능 */
+    width: 80px; 
+    text-align: center;
+  }
+  
+  .genre-btn.active {
+    background: #00c98b;
+    color: white;
+  }
+
+  .genre-filter a {
+    background: #1f1f1f;
+    border-radius: 20px;
+    padding: 8px 16px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  .genre-filter a:hover {
+    background-color: #00cc66;
+    color: black;
+  }
+  
+  .genre-filter a.active {
+    background: #00c98b;
+    color: black;
+  }
+  
+  .sort-dropdown {
+    position: relative;
+    text-align: right;
+    padding: 10px 16px;
+  }
+  
+  .sort-btn {
+    background-color: inherit;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .sort-options {
+    position: absolute;
+    text-align: left; 
+    top: 100%; /* 버튼 아래에 메뉴 표시 */
+    right: 0; 
+    background: white;
+    color: #000;
+    border-radius: 10px;
+    list-style: none;
+    padding: 8px 0; 
+    margin: 0;
+    display: none; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2000; /* 웹툰 카드보다 위에 표시되도록 설정 */
+    width: 120px; 
+  }
+  
+  .sort-options li {
+    padding: 12px 20px; 
+    cursor: pointer;
+    z-index: 2000; /* 웹툰 카드보다 위에 표시되도록 설정 */
+  }
+  
+  .sort-options li a {
+    text-decoration: none; 
+    color: #000; 
+    display: block; 
+    font-size: 16px; 
+  }
+  
+  .sort-options li a:hover {
+    background-color: #f4f4f4; 
+    color: #00cc66; 
+  }
+  
+  .sort-options.active {
+    display: block; /* active 클래스가 있을 때만 표시 */
+  }
+  
+  
+  .webtoon-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 10px;
+    align-items: start;
+  }
+
+  .webtoon-item {
+    background: #1e1e1e;
+    border-radius: 10px;
+    padding: 6px;
+    text-align: center;
+    position: relative;
+    display: block;
+    text-decoration: none; /* 링크 밑줄 제거 */
+    color: inherit;         /* 텍스트 색상 유지 */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .webtoon-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 255, 136, 0.3);
+  }
+  
+  
+  .webtoon-card {
+    position: relative;
+    display: inline-block;
+}
+
+.webtoon-card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.webtoon-card .additional-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;  
+    height: 30px;
+    border-radius: 8px;  
+}
+  
+  
+  .info {
+    font-size: 12px;
+    margin-top: 6px;
+    text-align: left;
+  }
+  
+  .title-like {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .title {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    margin: 0;
+  }
+  
+  .favorite-toggle {
+    background: none;
+    border: none;
+    font-size: 15px;  /* 아이콘 크기 조정 */
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    display: flex;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.favorite-toggle.inactive i {
+    color: lightgray;  /* 비활성화된 상태: 회색 */
+}
+
+.favorite-toggle.active i {
+    color: red;  /* 활성화된 상태: 빨간색 */
+}
+  
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 1px solid #222;
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  
+  .nav-link {
+    text-decoration: none;
+    background: none;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .nav-link i {
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+  
+  .nav-link.active {
+    color: #00ff88;
+  }
+  
+  .nav-link:hover {
+    color: #00cc66;
+    transform: scale(1.05);
+  }
+  
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    z-index: 1000; /* 웹툰 카드보다 위에 있도록 설정 */
+  }
+  
+  
+  .bottom-nav button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bottom-nav button.active {
+    color: #00ff88;
+  }
+  
+  .bottom-nav button i {
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+  
+  /* 기타 */
+  .new-badge {
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 20px;
+    margin-left: 8px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
