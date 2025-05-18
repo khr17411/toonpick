@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -72,4 +73,80 @@
   
       
   <script src="new_genre.js"></script>
+=======
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToonPick</title>
+  <link rel="stylesheet" href="new_genre.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+
+  <header>
+    <span>ToonPick</span>
+  </header>
+
+  <div class="nav-tabs">
+    <a href="new_main.html" class="tab-link">추천</a>
+    <a href="daymon.html" class="tab-link active">요일</a>
+    <a href="new_genre.html" class="tab-link">장르</a>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="home.html" class="nav-link active"><i>🏠</i>홈</a>
+    <a href="search.html" class="nav-link"><i>🔍</i>검색</a>
+    <a href="ai.html" class="nav-link"><i>💬</i>툰픽 AI</a>
+    <a href="mypage.html" class="nav-link"><i>👤</i>마이페이지</a>
+  </div>
+<!-- 장르 필터 -->
+<div class="genre-filter">
+  <a href="daymon.html" class="genre-btn active">월</a>
+  <a href= # class="genre-btn">화</a>
+  <a href= # class="genre-btn">수</a>
+  <a href= # class="genre-btn">목</a>
+  <a href= # class="genre-btn">금</a>
+  <a href= # class="genre-btn">토</a>
+  <a href= # class="genre-btn">일</a>
+</div>
+  
+  <!-- 정렬 기준 드롭다운 -->
+  <div class="sort-dropdown">
+    <button class="sort-btn">조회순 ▼</button>
+    <ul class="sort-options">
+      <li><a href="#view-order">조회순</a></li>
+      <li><a href="#rating-order">별점순</a></li>
+      <li><a href="#update-order">업데이트순</a></li>
+      <li><a href="#title-order">제목순</a></li>
+    </ul>
+  </div>
+  
+  <!-- 웹툰 리스트 -->
+  <div class="webtoon-list">
+    <a href="subpage.html" class="webtoon-item">
+        <div class="webtoon-card">
+            <img src="images/무한의 마법사.jpg" alt="무한의 마법사">
+            <img src="images/카카오페이지.jpg" alt="추가 이미지" class="additional-image">
+      </div>
+      <div class="info">
+        <div class="title-like">
+          <p class="title">무한의 마법사</p>
+          <button class="favorite-toggle inactive"><i class="fas fa-heart"></i></button>
+        </div>
+        <p class="author">김지우</p>
+        <p class="rating">⭐ 9.79</p>
+        <p class="tags">판타지, 아카데미</p>
+      </div>
+    </a>
+    
+    
+    </div>
+  </div>
+  
+      
+  <script src="new_genre.js"></script>
+>>>>>>> origin/main
 </body>

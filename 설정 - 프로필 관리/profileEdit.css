@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -191,3 +192,198 @@ body {
     background-color: #50E5A0;
     color: #fff;
   }
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+  }
+  @media (max-width: 480px) {
+    .user-section, .setting-section, .etc-section {
+      padding: 8px;
+    }
+  }
+
+    /* 헤더 스타일 */
+.app-header {
+    position: relative;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+    background-color: #50E5A0;
+}
+  
+  /* 뒤로가기 버튼 */
+.back-button {
+    position: absolute;
+    left: 16px;
+    font-size: 24px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+  
+  /* 중앙 제목 */
+.header-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* 프로필 이미지 섹션 */
+.profile-image-section {
+    height: 162px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 원형 박스 + 글자 묶음 */
+  .profile-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px; /* 정사각형과 텍스트 사이 간격 */
+  }
+  
+  /* 원형 박스 */
+  .profile-image-box {
+    width: 80px;
+    height: 80px;
+    background-color: #ccc; /* 나중에 이미지 넣을 자리 */
+    border-radius: 50%; 
+  }
+  
+  /* 텍스트 라벨 */
+  .profile-image-label {
+    font-size: 14px;
+    color: #333;
+  }
+  
+    /* 민트색 가로 라인 */
+.mint-line {
+    width: 90%;  
+    height: 2px;              /* 선 두께 */
+    background-color: #50E5A0;
+    margin: 0px auto;        /* 위아래 여백 + 가운데 정렬 */
+    border-radius: 1px;
+}
+
+/* 프로필 수정 전체 섹션 */
+.edit-section {
+    height: 316px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 15px 20px;
+    margin: 15px 0; 
+  }
+  
+  /* 개별 수정 줄 */
+  .each-edit {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 8px 16px;
+  }
+  
+  /* 윗부분 - 라벨 */
+  .edit-label-row {
+    flex: 4;                     /* 40% */
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #888;
+  }
+  
+  /* 아랫부분 - 값 + 버튼 */
+  .edit-content-row {
+    flex: 6;                     /* 60% */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  
+  /* 왼쪽 값 텍스트 */
+  .edit-value {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  /* 오른쪽 편집 버튼 */
+  .edit-button {
+    width: 55px;
+    height: 25px;
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    background-color: #50E5A0;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .else-setting {
+    height: 200px;
+    width: 100%;
+    gap: 8px;
+    padding: 34px 36px;
+  }
+  .password-change-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  /* 최종 액션 섹션 */
+.action-section {
+    height: 90px;
+    display: flex;
+    align-items: flex-end;         /* 아래쪽 정렬 */
+    justify-content: flex-end;     /* 오른쪽 정렬 */
+    padding: 0 20px 20px 20px;     
+  }
+
+  /* 버튼 그룹 간 간격 */
+.action-button-group {
+    display: flex;
+    gap: 12px;
+  }
+  
+  /* 공통 버튼 스타일 */
+  .cancel-btn,
+  .save-btn {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* 취소 버튼 스타일 */
+  .cancel-btn {
+    background-color: #f0f0f0;
+    color: #555;
+  }
+  
+  /* 저장 버튼 스타일 */
+  .save-btn {
+    background-color: #50E5A0;
+    color: #fff;
+  }
+>>>>>>> origin/main

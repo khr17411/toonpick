@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -71,4 +72,79 @@
     color: #50E5A0;
     cursor: pointer;
   }
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #50E5A0;
+    height: 100vh;
+  }
+  
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  /* 로고 박스 */
+  .logo-box {
+    position: relative;
+    margin-top: 100px;
+  }
+  
+  .logo-shadow {
+    font-size: 50px;
+    font-weight: bold;
+    color: #999;
+    position: absolute;
+    top: 4px;
+    left: 2px;
+    width: 100%;
+    text-align: center;
+    z-index: 0;
+  }
+  
+  .logo-main {
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .subtitle {
+    margin-top: 12px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* 버튼 그룹 */
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 50px;
+  }
+  
+  .login-btn,
+  .signup-btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 0;
+    color: #50E5A0;
+    cursor: pointer;
+  }
+>>>>>>> origin/main
   

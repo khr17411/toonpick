@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* 기본 설정 */
 body {
   margin: 0;
@@ -435,3 +436,442 @@ header {
 .hidden {
   display: none;
 }
+=======
+/* 기본 설정 */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #000;
+  color: white;
+}
+
+/* 헤더 */
+header {
+  background-color: #00cc66;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.header {
+  padding: 12px 16px 8px 16px;
+  background-color: #1e1e1e;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-box input {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  background-color: #333;
+  color: white;
+  outline: none;
+}
+
+/* 내 버튼 */
+#my-button {
+  background: none;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+#my-button.active {
+  background: white;
+  color: black;
+}
+
+/* 내비게이션 */
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu li.active {
+  color: #00c3ff;
+  transform: scale(1.05);
+}
+
+/* nav-tabs */
+.nav-tabs {
+  display: flex;
+  background-color: #111;
+  border-bottom: 1px solid #222;
+}
+
+.tab-link {
+  flex: 1;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  background: none;
+  color: #aaa;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.tab-link:hover {
+  color: #00ff88;
+  background-color: #1a1a1a;
+}
+
+.tab-link.active {
+  color: #00cc66;
+  border-bottom: 2px solid #00cc66;
+}
+
+
+.nav-tabs button {
+  flex: 1;
+  padding: 15px;
+  background: none;
+  border: none;
+  color: #aaa;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-tabs button.active {
+  color: #00cc66;
+  border-bottom: 2px solid #00cc66;
+}
+
+/* AI 관련 */
+.ai-banner {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.ai-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* 콘텐츠 영역 */
+.section {
+  padding: 20px;
+}
+
+.section h2,
+.popular-section h2,
+.section-header h2 {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  color: #00ff88;
+}
+
+.main-content {
+  padding: 16px;
+}
+
+.popular-section,
+.new-section {
+  margin-bottom: 32px;
+}
+
+.recommend-button {
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px;
+  background-color: #00c3ff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* 배지 */
+.badge_1 {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: gold;
+  color: black;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.badge_2 {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: silver;
+  color: black;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.badge_3 {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: brown;
+  color: black;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+/* 신작 리스트 */
+.new-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.new-item {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* hover 효과 추가 */
+  text-decoration: none; /* 링크 기본 스타일 제거 */
+  color: inherit; /* 링크 텍스트 색상 부모 요소의 색상으로 상속 */
+  margin-bottom: 10px; /* 각 항목 사이에  간격 추가 */
+}
+
+.new-item:hover {
+  transform: scale(1.05); /* hover 시 확대 */
+}
+
+.new-item img {
+  width: 70px;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+.new-info {
+  display: flex;
+  flex-direction: column; /* 세로로 정렬되도록 설정 */
+}
+
+.new-info h3 {
+  margin: 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.new-info p {
+  color: #aaa;
+  font-size: 13px;
+  margin: 5px 0 0 0;
+}
+
+/* Swiper */
+.swiper {
+  width: 100%;
+  height: 650px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.swiper-slide:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 20px rgba(0, 255, 136, 0.3); /* 은은한 초록 그림자 */
+  z-index: 2;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.swiper-slide:hover img {
+  filter: brightness(1.1);
+  border: 1px solid #00ff88;
+}
+
+.swiper-slide a {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide:hover a {
+  opacity: 0.9; /* hover 시 링크 강조 */
+}
+
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+  fill: white !important;
+  stroke: white !important;
+  opacity: 1 !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #00ff88 !important;
+  fill: #00ff88 !important;
+  stroke: #00ff88 !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet {
+  background: white !important;
+  opacity: 0.6 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #00ff88 !important;
+  opacity: 1 !important;
+}
+
+/* 하단 내비게이션 */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  border-top: 1px solid #222;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+
+.nav-link {
+  text-decoration: none;
+  background: none;
+  color: black;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-link i {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+.nav-link.active {
+  color: #00ff88;
+}
+
+.nav-link:hover {
+  color: #00cc66;
+  transform: scale(1.05);
+}
+
+
+.bottom-nav button {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom-nav button.active {
+  color: #00ff88;
+}
+
+.bottom-nav button i {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+/* 기타 */
+.new-badge {
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 20px;
+  margin-left: 8px;
+}
+
+.hidden {
+  display: none;
+}
+>>>>>>> origin/main

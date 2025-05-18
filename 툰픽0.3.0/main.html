@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -215,3 +216,222 @@
   <script src="main.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToonPick</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-top">
+      <h1>ToonPick</h1>
+    </div>
+    <div class="search-box">
+        <input type="text" placeholder="제목 키워드를 입력하세요...">
+        <button id="my-button">MY</button> <!-- 버튼에 id 추가 (MY) -->
+    </div>
+    
+    
+  </header>
+
+  <main class="main-content">
+    <nav class="nav-menu">
+        <ul>
+          <li class="active">
+            <a href="main.html">추천</a>
+          </li>
+          <li>
+            <a href="main.html">요일</a>
+          </li>
+          <li>
+            <a href="main.html">장르</a>
+          </li>
+        </ul>
+        <button class="ai-button">ToonPick AI 💬</button>
+      </nav>
+    <section class="popular-section">
+      <h2>실시간 인기 TOP 10!</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/나혼자만 레벨업.jpg" alt="인기 웹툰 1"></div>
+          <div class="swiper-slide"><img src="images/화산귀환.jpg" alt="인기 웹툰 2"></div>
+          <div class="swiper-slide"><img src="images/별이삼샵.jpg" alt="인기 웹툰 3"></div>
+          <div class="swiper-slide"><img src="images/무한의 마법사.jpg" alt="인기 웹툰 4"></div>
+          <div class="swiper-slide"><img src="images/외모지상주의.jpg" alt="인기 웹툰 5"></div>
+          <div class="swiper-slide"><img src="images/신과함께.jpg" alt="인기 웹툰 6"></div>
+          <div class="swiper-slide"><img src="images/낢이 사는 이야기.jpg" alt="인기 웹툰 7"></div>
+          <div class="swiper-slide"><img src="images/윈드 브레이커.jpg" alt="인기 웹툰 8"></div>
+          <div class="swiper-slide"><img src="images/중증외상센터.jpg" alt="인기 웹툰 9"></div>
+          <div class="swiper-slide"><img src="images/스위트홈.jpg" alt="인기 웹툰 10"></div>
+          <!-- 필요한 만큼 슬라이드 추가 가능 -->
+        </div>
+        <!-- 네비게이션 버튼 -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <button class="recommend-button">판타지 웹툰 추천해줘! 💬</button>
+    </section>
+
+    <section class="new-section">
+      <div class="section-header">
+        <h2>신작 추천</h2>
+      </div>
+      <div class="new-list">
+        <div class="new-item">
+          <img src="images/화산귀환.jpg" alt="화산귀환">
+          <div class="new-info">
+            <h3 style="margin: 0; display: flex; align-items: center;">
+              <img src="images/네이버 웹툰.jpg" alt="네이버 웹툰" style="width: 20px; height: 20px; margin-right: 8px; border-radius: 3px;">
+              화산귀환
+            </h3>
+            <h5 style="margin: 5px 0;">LICO/비가</h5>
+            <p style="margin: 5px 0; color: gray;">#판타지  #무협 #액션</p>
+          </div>
+        </div>
+        <div class="new-item">
+          <img src="images/나혼자만 레벨업.jpg" alt="나혼자만 레벨업">
+          <div class="new-info">
+            <h3 style="margin: 0; display: flex; align-items: center;">
+              <img src="images/카카오페이지.jpg" alt="카카오페이지" style="width: 20px; height: 20px; margin-right: 8px; border-radius: 3px;">
+              나혼자만 레벨업
+            </h3>
+            <h5 style="margin: 5px 0;">추공</h5>
+            <p style="margin: 5px 0; color: gray;">#판타지 #액션 #헌터</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 추가된 부분: 마이페이지 컨테이너 -->
+  <div id="mypage-container" class="mypage hidden">
+    <div class="mypage-header">
+      <h2 id="user-greeting">
+        <span class="user-name" id="nickname-display-greeting"></span>
+        <span class="hello-text">님 안녕하세요!</span>
+      </h2> 
+      <!-- 사용자 이름 반영되는 부분 -->
+      <div class="mypage-buttons">
+        <button id="setting-button">설정</button>
+        <button>로그아웃</button>
+      </div>
+    </div>
+
+    <div id="setting-container" class="setting hidden">
+      <div class="change-name">
+        <div class="setting-header">
+          <button id="setting-back-button" class="back-button">←</button>
+          <h2>설정</h2>
+        </div>
+        <div class="setting-body">
+          <div class="nickname-setting">
+            <label for="nickname-display">닉네임:</label>
+            <span id="nickname-display-setting"></span>
+            <button id="change-nickname-button">변경</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mypage-tabs">
+      <button id="favorites-tab" class="active">즐겨찾기</button>
+      <button id="recent-tab">최근 본 웹툰</button>
+    </div>
+    
+    <div class="mypage-body">
+    <!-- 즐겨찾기 목록 -->
+    <div id="favorites-list" class="mypage-list">
+      <div class="mypage-item">
+        <img src="images/화산귀환.jpg" alt="화산귀환">
+        <div class="item-info">
+          <h3>
+            <img src="images/네이버 웹툰.jpg" class="logo-img" style="width: 20px; height: 20px; margin-right: 8px; border-radius: 3px;"> 화산귀환
+            <span class="new-badge">NEW</span>
+          </h3>
+          <p>최근 업데이트 2+</p>
+        </div>
+        <button class="favorite-toggle active">★</button>
+      </div>
+      <div class="mypage-item">
+        <img src="images/나혼자만 레벨업.jpg" alt="나혼자만 레벨업">
+        <div class="item-info">
+          <h3>
+            <img src="images/카카오페이지.jpg" class="logo-img" style="width: 20px; height: 20px; margin-right: 8px; border-radius: 3px;"> 나혼자만 레벨업
+          </h3>
+          <p>최근 업데이트 1+</p>
+        </div>
+        <button class="favorite-toggle active">★</button>
+      </div>
+      <div class="mypage-item">
+        <img src="images/별이삼샵.jpg" alt="별이삼샵">
+        <div class="item-info">
+          <h3>
+            <img src="images/네이버 웹툰.jpg" class="logo-img" style="width: 20px; height: 20px; margin-right: 8px; border-radius: 3px;"> 별이삼샵
+          </h3>
+          <p>최근 업데이트 0+</p>
+        </div>
+        <button class="favorite-toggle active">★</button>
+      </div>
+    </div>
+
+    <!-- 최근 본 웹툰 목록 -->
+    <div id="recent-list" class="mypage-list hidden">
+      <div class="mypage-item">
+        <img src="images/별이삼샵.jpg" alt="별이삼샵">
+        <div class="item-info">
+          <h3>
+            <img src="images/네이버 웹툰.jpg" class="logo-img" style="width: 20px; height: 20px; margin-right: 8px; border-radius: 3px;"> 별이삼샵
+          </h3>
+          <p>최근 업데이트 0+</p>
+        </div>
+        <button class="favorite-toggle active">★</button>
+      </div>
+      <div class="mypage-item">
+        <img src="images/나혼자만 레벨업.jpg" alt="나혼자만 레벨업">
+        <div class="item-info">
+          <h3>
+            <img src="images/카카오페이지.jpg" class="logo-img" style="width: 20px; height: 20px; margin-right: 8px; border-radius: 3px;"> 나혼자만 레벨업
+          </h3>
+          <p>최근 업데이트 1+</p>
+        </div>
+        <button class="favorite-toggle active">★</button>
+      </div>
+      <div class="mypage-item">
+        <img src="images/화산귀환.jpg" alt="화산귀환">
+        <div class="item-info">
+          <h3>
+            <img src="images/네이버 웹툰.jpg" class="logo-img" style="width: 20px; height: 20px; margin-right: 8px; border-radius: 3px;"> 화산귀환
+          </h3>
+          <p>최근 업데이트 2+</p>
+        </div>
+        <button class="favorite-toggle active">★</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <!--로그아웃 여부-->
+  <div id="logout-modal" class="modal hidden">
+    <div class="modal-content">
+      <p>로그아웃 하시겠습니까?</p>
+      <div class="modal-buttons">
+        <button id="confirm-logout">확인</button>
+        <button id="cancel-logout">취소</button>
+      </div>
+    </div>
+  </div>
+  <!-- 추가된 부분 끝 -->
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
+>>>>>>> origin/main

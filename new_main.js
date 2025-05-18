@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const swiper = new Swiper('.swiper', {
     loop: true,
     pagination: {
@@ -9,3 +10,16 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
     },
   });
+=======
+const swiper = new Swiper('.swiper', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+>>>>>>> origin/main

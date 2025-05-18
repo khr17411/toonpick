@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -260,3 +261,267 @@ body {
   
   
   
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+  }
+  @media (max-width: 480px) {
+    .user-section, .setting-section, .etc-section {
+      padding: 8px;
+    }
+  }
+  
+  
+  /* 헤더 스타일 */
+.app-header {
+    position: relative;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+    background-color: #50E5A0;
+}
+  
+  /* 뒤로가기 버튼 */
+.back-button {
+    position: absolute;
+    left: 16px;
+    font-size: 24px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+  
+  /* 중앙 제목 */
+.header-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+  /* 사용자 섹션 */
+.user-section {
+    height: 154px;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+}
+  
+  /* 내부 박스 공통 스타일 */
+.user-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+}
+  
+
+  /* box-1 안에 정사각형 박스 */
+.user-image-box {
+    width: 70px;
+    height: 70px;
+    background-color: #444; 
+}
+  
+  /* box-1 오른쪽 정렬 + 중앙 수직 정렬 */
+.box-1 {
+    width: 25%;
+    background-color: #ffffff;
+  
+    display: flex;
+    align-items: center;        /* 수직 정렬 */
+    justify-content: flex-end;  /* 오른쪽 정렬 */
+    padding-right: 12px;        /* 박스가 너무 붙지 않도록 약간 여백 */
+}
+  
+  /* 중앙 박스 스타일 */
+.box-2 {
+    width: 45%;
+    background-color: #ffffff;
+  
+    display: flex;
+    align-items: center;         /* 수직 중앙 정렬 */
+    justify-content: flex-start; /* 왼쪽 정렬 */
+    padding-left: 12px;
+}
+  
+  /* 텍스트 묶음 */
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;                   /* 줄 간 간격 */
+    font-size: 17px;
+    color: #333;
+}
+  
+  /* box-3 스타일 */
+.box-3 {
+    width: 30%;
+    background-color: #ffffff;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+  
+
+/* 공통 텍스트 버튼 스타일 */
+.text-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  /* 프로필 관리 - 중앙 정렬 유지 */
+  .profile-btn {
+    font-size: 17px;
+    color: #333;
+  }
+  
+  /* 로그아웃 - 아래 정렬 */
+  .logout-btn {
+    font-size: 14px;
+    text-decoration: underline;
+    color: #333;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* 민트색 가로 라인 */
+.mint-line {
+    width: 90%;
+    height: 2px;              /* 선 두께 */
+    background-color: #50E5A0;
+    margin: 0px auto;        /* 위아래 여백 + 가운데 정렬 */
+    border-radius: 1px;
+}
+
+/* 설정 섹션 */
+.setting-section {
+    height: 170px;
+    display: flex;
+    flex-direction: column;  /* 세로로 나열 */
+    background-color: #ffffff;
+    gap: 8px;
+    padding: 10px;
+  }
+  
+  /* 개별 설정 박스 */
+  .each-setting {
+    flex: 1;
+    display: flex;
+    align-items: center;              /* 수직 중앙 정렬 */
+    justify-content: space-between;  /* 양 끝 정렬 */
+    background-color: #ffffff;
+    border: none;
+    padding: 0 12px;
+    font-size: 15px;
+    color: #333;
+  }
+  
+  /* 왼쪽 영역 묶음 */
+  .setting-left {
+    display: flex;
+    align-items: center;
+    gap: 16px
+  }
+  
+  /* 아이콘 박스 */
+  .icon-box {
+    width: 26px;
+    height: 26px;
+    margin-left: 20px;
+    background-color: #000000;
+  }
+  
+  /* 텍스트 */
+  .setting-label {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+/* 토글 그룹 */
+.toggle-group {
+    display: flex;
+    gap: 4px;
+  }
+  
+  /* 토글 버튼 스타일 */
+  .toggle-btn {
+    font-size: 14px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  /* 활성화된 토글 버튼 */
+  .toggle-btn.active {
+    background-color: #50E5A0;
+    color: white;
+    border-color: #50E5A0;
+  }
+  
+  /* ETC 섹션 */
+.etc-section {
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+    background-color: #ffffff;
+  }
+  
+
+  
+  /* 각 버튼 내부 구조 */
+.etc-button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;     /* 좌우 정렬 */
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    padding: 0 35px;                     /* 좌우 여백 */
+  }
+  
+  /* 버튼 내 왼쪽 텍스트 */
+  .btn-label {
+    text-align: left;
+  }
+  
+  /* 버튼 내 꺾은선 아이콘 */
+  .btn-icon {
+    font-size: 20px;
+    color: #50E5A0;
+  }
+  
+  
+  
+>>>>>>> origin/main

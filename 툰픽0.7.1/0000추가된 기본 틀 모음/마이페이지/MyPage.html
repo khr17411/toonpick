@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -117,4 +118,125 @@
 
     <script src="MyPage.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="MyPage.css"/>
+</head>
+<body>
+    <header class="app-header">
+        <button class="back-button">&#x276E;</button>
+        <h1 class="header-title">마이페이지</h1>
+        <button class="alarm">
+            <img src="alarm.png" alt="알림 아이콘">
+        </button>
+    </header>
+    <div class="user-section">
+    <div class="user-info">
+        <div class="profile-img"></div>
+        <div class="greeting">
+        <span class="username" id="username">js에유저이름있음</span>님 안녕하세요!
+        </div>
+    </div>
+    <button class="settings-icon">
+        <img src="setting.png" alt="세팅 이미지">
+    </button>
+    </div>
+    <div class="navigator">
+        <button class="nav-button active" id="favorites-tab">즐겨찾기</button>
+        <button class="nav-button" id="recent-tab">최근 본 웹툰</button>
+    </div>
+    <div class="sort-wrapper">
+        <button class="sort-toggle" id="sort-toggle-btn">조회순 ▼</button>
+        <div class="sort-options" id="sort-options">
+            <button class="sort-option active">조회순</button>
+            <button class="sort-option">별점순</button>
+            <button class="sort-option">업데이트순</button>
+            <button class="sort-option">제목순</button>
+        </div>
+    </div>
+
+    <div id = "favorites-list" class = "selected-list">
+        <div class="list-item">
+            <img src="images/화산귀환.jpg" alt="화산귀환">
+            <div class="item-info">
+                <h3>
+                    <img src="images/네이버 웹툰.jpg" class="logo-img" style="width: 20px; height: 20px; margin-right: 8px; border-radius: 3px;"> 화산귀환
+                    <p>LICO</p>
+                    <span class="new-badge">NEW</span>
+                </h3>
+                <p>최근 업데이트 2+</p>
+            </div>
+            <button class="favorite-toggle active">♥</button>
+        </div>
+        <div class="list-item">
+
+            <img src="images/나혼자만 레벨업.jpg" alt="나혼자만 레벨업">
+            <div class="item-info">
+                <h3>
+                    <img src="images/카카오페이지.jpg" class="logo-img" style="width: 20px; height: 20px; margin-right: 8px; border-radius: 3px;"> 나혼자만 레벨업
+                    <p>추공</p>
+                </h3>
+                <p>최근 업데이트 1+</p>
+            </div>
+            <button class="favorite-toggle active">♥</button>
+        </div>
+        <div class="list-item">
+
+            <img src="images/나혼자만 레벨업.jpg" alt="나혼자만 레벨업">
+            <div class="item-info">
+                <h3>
+                    <img src="images/카카오페이지.jpg" class="logo-img" style="width: 20px; height: 20px; margin-right: 8px; border-radius: 3px;"> 나혼자만 레벨업
+                    <p>추공</p>
+                </h3>
+                <p>최근 업데이트 1+</p>
+            </div>
+            <button class="favorite-toggle active">♥</button>
+        </div>
+        <div class="list-item">
+
+            <img src="images/나혼자만 레벨업.jpg" alt="나혼자만 레벨업">
+            <div class="item-info">
+                <h3>
+                    <img src="images/카카오페이지.jpg" class="logo-img" style="width: 20px; height: 20px; margin-right: 8px; border-radius: 3px;"> 나혼자만 레벨업
+                    <p>추공</p>
+                </h3>
+                <p>최근 업데이트 1+</p>
+            </div>
+            <button class="favorite-toggle active">♥</button>
+        </div>
+    </div>
+
+    <div id = "recent-list" class = "selected-list hidden">
+        <div class="list-item">
+            <img src="images/나혼자만 레벨업.jpg" alt="나혼자만 레벨업">
+            <div class="item-info">
+                <h3>
+                    <img src="images/카카오페이지.jpg" class="logo-img" style="width: 20px; height: 20px; margin-right: 8px; border-radius: 3px;"> 나혼자만 레벨업
+                    <p>추공</p>
+                </h3>
+                <p>최근 업데이트 1+</p>
+            </div>
+            <button class="view-button">
+                <span class="view-label">이어보기 &#x276F;</span>
+                <span class="view-episode">30화</span>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="bottom-nav">
+        <a href="main.html" class="nav-link active"><i>🏠</i>홈</a>
+        <a href="search.html" class="nav-link"><i>🔍</i>검색</a>
+        <a href="ai.html" class="nav-link"><i>💬</i>툰픽 AI</a>
+        <a href="mypage.html" class="nav-link"><i>👤</i>마이페이지</a>
+    </div>
+
+    <script src="MyPage.js"></script>
+</body>
+>>>>>>> origin/main
 </html>

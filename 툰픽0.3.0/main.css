@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* 기본 설정 */
 body {
   margin: 0;
@@ -491,4 +492,499 @@ body {
   
   .hidden {
     display: none;
+=======
+/* 기본 설정 */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.header {
+  padding: 8px 16px 4px 16px;
+  background-color: #1e1e1e;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top h1 {
+  font-size: 24px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  margin-right: 8px;
+}
+
+/*버튼만 약간 수정함*/
+#my-button {
+    background: none;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold
+  }
+#my-button.active {
+    background: white;
+    color: black;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s, transform 0.3s; /* 부드럽게 효과 */
+}
+
+.nav-menu a:hover {
+  color: #00c3ff; /* 마우스 올리면 파란색으로 */
+  transform: scale(1.05); /* 살짝 커지게 */
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.nav-menu li.active {
+  color: #00c3ff;
+}
+
+.ai-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.main-content {
+  padding: 8px 16px 16px 16px;
+}
+
+.popular-section {
+  margin-bottom: 32px;
+}
+
+.popular-section h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.recommend-button {
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px;
+  background-color: #00c3ff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.new-section {
+  margin-top: 32px;
+}
+
+.section-header h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.new-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.new-item {
+  display: flex;
+  background-color: #2c2c2c;
+  border-radius: 12px;
+  padding: 12px;
+  align-items: center;
+  height: 100px;
+}
+
+.new-item img {
+  height: 100px;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+.new-info h3 {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+}
+
+.new-info p {
+  margin: 0;
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* Swiper 기본 설정 */
+.swiper {
+  width: 100%;
+  height: 650px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* 슬라이드 안 이미지 */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* 화살표 버튼 스타일 */
+/* 화살표 기본 스타일 */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;   /* 기본 색 흰색 */
+  fill: white !important;
+  stroke: white !important;
+  opacity: 1 !important;      /* 흐릿하지 않게 */
+}
+
+/* 화살표 hover 스타일 */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: white !important;    /* hover 때도 흰색 유지 */
+  fill: white !important;
+  stroke: white !important;
+  opacity: 1 !important;
+}
+
+
+.swiper-pagination-bullet {
+  background: white;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background: white;
+  opacity: 1;
+}
+/* 슬라이드 점 색깔 */
+.swiper-pagination-bullet {
+  background: white !important;
+  opacity: 0.6 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: white !important;
+  opacity: 1 !important;
+}
+
+/* 마이페이지 추가됨*/
+.mypage {
+    position: fixed;
+    top: 130px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    padding: 30px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    z-index: 100;
+    height: calc(100vh - 100px); 
+    overflow-y: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+.mypage.show {
+  transform: translateY(0);
+}
+.setting {
+  position: fixed;
+  top: 95px;
+  left: 0;
+  right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    padding: 30px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    z-index: 100;
+    height: auto;
+    overflow-y: auto;
+}
+.setting.show {
+  transform: translateY(0);
+}
+.setting-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+.back-button {
+  position: absolute;
+  left: 0;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: black;
+}
+.setting-header h2 {
+  font-size: 24px;
+  margin: 0;
+  color: black;
+}
+.setting-body {
+  padding: 16px;
+}
+.nickname-setting {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.nickname-setting label {
+  font-weight: bold;
+  color: black;
+}
+
+.nickname-setting span {
+  font-size: 18px;
+  color: black;
+}
+
+#change-nickname-button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #252525;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+.hidden {
+  display: none;
+}
+
+.mypage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+  margin-bottom: 16px;
+}
+
+/*사용자님 안녕하세요*/
+#user-greeting {
+    display: flex;
+    align-items: baseline;
+    gap: 6px; 
+    margin: 0;
+  }
+
+.user-name {
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .hello-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+  }
+
+  /*설정, 로그아웃*/
+.mypage-buttons button {
+  background-color: #ffffff;
+  border: none;
+  color: rgb(77, 77, 77);
+  padding: 6px 12px;
+  margin-left: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+
+/*즐겨찾기, 최근 본 웹툰 버튼*/
+.mypage-tabs {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 16px;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.mypage-tabs button {
+  flex: none;
+  padding: 8px 12px;
+  border: none;
+  background-color: white;
+  color: gray;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.mypage-tabs button.active {
+  font-size: 18px;
+  color: black;
+}
+
+.mypage-list {
+  margin-top: 16px;
+}
+
+/*즐겨찾기, 최근 본 웹툰*/
+.mypage-item {
+  display: flex;
+  background-color: #afafaf;
+  border-radius: 12px;
+  padding: 6px;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.mypage-item img {
+  width: 80px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+.item-info {
+    margin-top: 30px
+}
+.item-info h3 {
+  display: flex;
+  align-items: center;
+  color: black;
+  margin: 0;
+}
+.item-info p{
+  margin-top: 0px;
+  margin-left: 30px;
+  color: black;
+  font-size: 13px;
+}
+
+.logo-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  border-radius: 3px;
+}
+
+/*즐겨찾기 별*/
+.favorite-toggle {
+    background: none;
+    border: none;
+    color: rgb(71,71,71);
+    font-size: 20px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: flex;
+    cursor: pointer;
+    margin-left: auto; 
+  }
+  
+  .favorite-toggle.active {
+    color: rgb(71, 71, 71);
+  }
+  
+  .favorite-toggle.inactive {
+    color: lightgray; 
+  }
+
+.new-badge {
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 20px;
+  margin-left: 8px;
+}
+
+/*로그아웃*/
+.modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.3);
+    z-index: 200;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    text-align: center;
+    color: black;
+  }
+  
+  .modal-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+  }
+  
+  .modal-buttons button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #252525;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .hidden {
+    display: none;
+>>>>>>> origin/main
   }
