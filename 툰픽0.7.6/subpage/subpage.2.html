@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>서브페이지</title>
+  <link rel="stylesheet" href="subpage.1.css" />
+</head>
+<body>
+  <header class="back-header">
+    <button class="back-btn" onclick="window.history.back();">
+    &lt;
+  </button>
+  </header>
+
+  <div class="container">
+    <!-- 배경 흐림 헤더 -->
+  <div class="header">
+  <div class="header-bg" style="background-image: url('../images/나혼자만 레벨업.jpg');"></div> 
+  <div class="header-content">
+    <img src="../images/나혼자만 레벨업.jpg" alt="서브 페이지">
+    <div class="info">
+      <h1>나혼자만 레벨업</h1> 
+      <p>추공</p>   
+      <p class="rating">★ 9.79</p>
+      <p class="genre">판타지/액션/헌터</p>
+      <button class="favorite-btn">즐겨찾기 | 0</button>
+    </div>
+  </div>
+</div>
+
+<!-- 설명 -->
+<p class="description">
+ 10여 년 전,
+다른 차원과 이쪽 세계를 이어 주는 통로 ‘게이트’가 열리고 평범한 이들 중 각성한 자들이 생겨났다. 
+게이트 안의 던전에서 마물을 사냥하는 각성자. 그들을 일컬어 ‘헌터’라 부른다.
+  
+</p>
+<a id="preview-link" href="https://page.kakao.com/content/50866481?utm_source=naver_bs_PC&utm_medium=traffic&utm_campaign=pm_levelup_kp_content_home_50866481_PC_231213&t_src=naver_bs_PC&t_ch=traffic&t_obj=pm_levelup_kp_content_home_50866481_PC_231213&&utm_term=Title" target="_blank" class="button-link">웹툰 바로가기</a>
+<!-- 탭 -->
+<div class="tabs">
+  <button class="active">댓글</button>
+</div>
+
+<!-- 댓글 입력 폼 -->
+<div class="comment-form">
+  <input type="text" id="username" placeholder="닉네임" />
+  <input type="text" id="usercomment" placeholder="댓글을 입력하세요" />
+  <button onclick="addComment()">등록</button>
+</div>
+
+<!-- 댓글 -->
+<div class="comment-section">
+ <p class="comment-count">댓글 0</p>
+<!-- 댓글들이 여기에 동적으로 추가됨 -->
+</div>
+
+  </div>
+  <script src="subpage.js" defer></script>
+</body>
+</html>
