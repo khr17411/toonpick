@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>서브페이지</title>
+  <link rel="stylesheet" href="subpage.1.css" />
+</head>
+<body>
+  <header class="back-header">
+    <button class="back-btn" onclick="window.history.back();">
+    &lt;
+  </button>
+  </header>
+
+  <div class="container">
+    <!-- 배경 흐림 헤더 -->
+  <div class="header">
+  <div class="header-bg" style="background-image: url('../images/화산귀환.jpg');"></div> 
+  <div class="header-content">
+    <img src="../images/화산귀환.jpg" alt="서브 페이지">
+    <div class="info">
+      <h1>화산귀환</h1> 
+      <p>LICO/비가</p>   
+      <p class="rating">★ 9.79</p>
+      <p class="genre">액션/무협</p>
+      <button class="favorite-btn">즐겨찾기 | 0</button>
+    </div>
+  </div>
+</div>
+
+<!-- 설명 -->
+<p class="description">
+  대 화산파 13대 제자.천하삼대검수 매화검존 청명.
+  천하를 혼란에 빠뜨린 고금제일마 천마의 목을 치고 십만대산의 정상에서 영면.
+  백 년의 시간을 뛰어넘어 아이의 몸으로 다시 살아나다.<br>
+  ......뭐? 화산이 망해? 이게 뭔 개소리야!?
+</p>
+<a id="preview-link" href="https://comic.naver.com/webtoon/list?titleId=769209" target="_blank" class="button-link">웹툰 바로가기</a>
+<!-- 탭 -->
+<div class="tabs">
+  <button class="active">댓글</button>
+</div>
+
+<!-- 댓글 입력 폼 -->
+<div class="comment-form">
+  <input type="text" id="username" placeholder="닉네임" />
+  <input type="text" id="usercomment" placeholder="댓글을 입력하세요" />
+  <button onclick="addComment()">등록</button>
+</div>
+
+<!-- 댓글 -->
+<div class="comment-section">
+ <p class="comment-count">댓글 0</p>
+<!-- 댓글들이 여기에 동적으로 추가됨 -->
+</div>
+
+  </div>
+  <script src="subpage.js" defer></script>
+</body>
+</html>

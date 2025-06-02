@@ -1,0 +1,281 @@
+#searchResultSection {
+    display: none;
+  }
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 1px solid #222;
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  
+  .nav-link {
+    text-decoration: none;
+    background: none;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .nav-link i {
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+  
+  .nav-link.active {
+    color: #00ff88;
+  }
+  
+  .nav-link:hover {
+    color: #00cc66;
+    transform: scale(1.05);
+  }
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    z-index: 1000; /* 웹툰 카드보다 위에 있도록 설정 */
+  }
+  
+  
+  .bottom-nav button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bottom-nav button.active {
+    color: #00ff88;
+  }
+  
+  .bottom-nav button i {
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  html, body { 
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;  /* 수평 스크롤 방지 */
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: white;
+    color: white;
+    }
+
+    header {
+        background-color: #00cc66;
+        color: white;
+        padding: 10px 20px;
+        height: 60px;
+        display: flex;
+        justify-content: center; /* 가로 가운데 정렬 */
+        align-items: center;     /* 세로 가운데 정렬 */
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+      }
+      
+      
+      .header {
+        padding: 12px 16px 8px 16px;
+        background-color: #1e1e1e;
+      }
+      
+      .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .header-top h1 {
+        font-size: 24px;
+        margin: 0;
+      }
+      
+      .search-box {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      
+      .search-box input {
+        padding: 8px;
+        border: none;
+        background-color: #333;
+        color: white;
+        outline: none;
+      }
+
+  .search-container { 
+    background: white; 
+    padding-top: 15px; 
+    border-radius: 10px; 
+    width: 85%; 
+    margin:0 auto; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    }
+
+  input[type="text"] { 
+    width: 100%; 
+    padding: 10px 0px; 
+    font-size: 16px; 
+    border: 1px solid #ccc; 
+    border-radius: 6px; 
+    }
+
+  .section-title { 
+    margin-top: 20px; 
+    font-weight: bold;
+    color: black;  
+    }
+
+    .author {
+        font-size: 0.9em;
+        color: gray;
+        margin-left: 5px;
+    }
+
+    .addimg {
+        width: 25px !important; 
+        height: 25px !important; 
+        border-radius: 8px;
+        margin-left: 5px;
+        vertical-align: middle;  /* 텍스트와 정렬 맞추기 */
+        object-fit: cover;  /* 이미지 비율을 맞춰서 잘리게 함 */
+    }
+    
+  .tag {
+    display: inline-block; 
+    background: #e0f5e9; 
+    color: #2a9d8f; 
+    padding: 5px 10px;
+    margin: 5px 5px 0 0; 
+    border-radius: 20px; 
+    cursor: pointer; 
+}
+
+.highlight {
+    color:  #00cc66;  /* 강조된 텍스트를 초록색으로 */
+    font-weight: bold;  /* 텍스트를 굵게 */
+}
+
+  .result-item { 
+    background: #f9f9f9; 
+    padding: 10px; 
+    margin-top: 10px; 
+    border-radius: 6px; 
+    border: 1px solid #ddd;
+    color: black; 
+}
+
+  .recent-keyword { 
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 8px; 
+}
+
+  .recent-keyword span { 
+    cursor: pointer; 
+    color: #555; 
+}
+
+  .recent-keyword button {
+    border: none; 
+    background: none; 
+    cursor: pointer; 
+    color: #999; 
+}
+
+.result-card {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    color: black;
+    gap: 15px;  
+  }
+  
+  .result-card img {
+    width: 140px;
+    height: 200px;
+    border-radius: 8px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.result-info {
+    margin-left: 10px;  
+    display: flex;
+    flex-direction: column;  
+    justify-content: center; 
+    max-width: 280px; 
+}
+
+  .result-info .title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .result-info .tag {
+    font-size: 14px;
+    color: #2a9d8f;
+    margin-bottom: 5px;
+  }
+  
+  .result-info .rating {
+    font-size: 14px;
+    color: #ffcc00;
+  }
+
+  .result-card-content {
+    display: flex;
+    align-items: center;
+}
+  
+.result-link {
+    text-decoration: none;  /* 기본 링크 밑줄 없애기 */
+    color: inherit;  /* 링크 색상 기본값 사용 (배경색에 맞게) */
+    display: block;
+}
+
+.result-card:hover {
+    background-color: #f0f0f0;  /* hover 시 배경색을 약간 변경 */
+    cursor: pointer;  /* 커서를 포인터로 변경하여 클릭할 수 있음을 표시 */
+}
+
+.result-card:hover .result-info {
+    transform: scale(1.05);  /* hover 시 결과를 약간 확대 */
+    transition: transform 0.3s ease;  /* 부드러운 확대 효과 */
+}
+
