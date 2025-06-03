@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const genres = genre ? genre.split(',') : [];
   const link = params.get('link');
 
-  // ✅ 무조건 genre_click 실행 (hasLoggedGenre 제거)
+
   if (title) {
     fetch('http://localhost:3000/api/genre_click', {
       method: 'POST',
