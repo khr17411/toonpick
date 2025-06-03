@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>서브페이지</title>
+  <link rel="stylesheet" href="subpage.1.css" />
+</head>
+<body>
+  <header class="back-header">
+    <button class="back-btn" onclick="window.history.back();">
+    &lt;
+  </button>
+  </header>
+
+  <div class="container">
+    <!-- 배경 흐림 헤더 -->
+  <div class="header">
+  <div class="header-bg"></div> 
+  <div class="header-content" style="background-image: url('../images/중증외상센터.jpg');">
+    <img src="../images/중증외상센터.jpg" alt="서브 페이지">
+    <div class="info">
+      <h1>중증외상센터</h1> 
+      <p>홍바치라</p>   
+      <p class="rating">★ 9.79</p>
+      <p class="genre">판타지/의학</p>
+      <button class="favorite-btn">즐겨찾기 | 0</button>
+    </div>
+  </div>
+</div>
+
+<!-- 설명 -->
+<p class="description">
+  살 수 있는 환자들이 죽어 가고 있다. 이제 더는 그런 일이 없도록 하겠다.<br>
+  사명감 있는 또라이. 중증외상센터의 난폭한 천사.<br>
+  외상외과 전문의 백강혁, 그의 중증외상센터 되살리기 프로젝트.<br>
+</p>
+<a id="preview-link" href="https://comic.naver.com/webtoon/list?titleId=738174" target="_blank" class="button-link">웹툰 바로가기</a>
+<!-- 탭 -->
+<div class="tabs">
+  <button class="active">댓글</button>
+</div>
+
+<!-- 댓글 입력 폼 -->
+<div class="comment-form">
+  <input type="text" id="username" placeholder="닉네임" />
+  <input type="text" id="usercomment" placeholder="댓글을 입력하세요" />
+  <button onclick="addComment()">등록</button>
+</div>
+
+<!-- 댓글 -->
+<div class="comment-section">
+ <p class="comment-count">댓글 0</p>
+<!-- 댓글들이 여기에 동적으로 추가됨 -->
+</div>
+
+  </div>
+  <script src="subpage.js" defer></script>
+</body>
+</html>
